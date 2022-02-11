@@ -24,13 +24,20 @@ p{
     font-size: .8rem;
 }
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
+	p{
+		font-size: .85rem;
+	}
+}
+
+
+@media (min-width: 80rem){
 	p{
 		font-size: .95rem;
 	}
 }
 
-
+/* -------------------------------menu---------------------------------*/
 
 
 .main-header{
@@ -38,7 +45,8 @@ background-color: rgb(0, 0, 0);
 display: flex;
 justify-content: center;
 align-items: center;
-z-index: -10;}
+z-index: -10;
+}
 
 .main-header__brand{
     padding: 2rem;
@@ -47,11 +55,19 @@ z-index: -10;}
 
 .main-nav__items{
 display: flex;
-gap: 2rem;}
+gap: 2rem;
+}
 
 .main-nav__item{
 list-style: none;
-padding: 2rem;}
+padding: 2rem;
+}
+
+
+/* ----------------------------------Paralaje-------------------------------*/
+.contenedor-paralaje__1{
+ z-index: -1;
+}
 
 
 .principal-contenedor{   
@@ -113,25 +129,23 @@ z-index: 4;
 
 
 
-
-
-
-.contenedor-paralaje__1{
-z-index: -1;}
+/*-------------------------------Introduccion----------------------------------*/
 
 .contenedor-paralaje__2{
-background-color: rgb(255, 255, 255);}
+background-color: rgb(255, 255, 255);
+}
 
 @media (min-width: 1900r){
 .contenedor-paralaje__2{
 display: flex;
-flex-direction: column;} }
-
+flex-direction: column;} 
+}
 
 .contenedor-concepto{
-padding: 2rem;}
+padding: 2rem;
+}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .contenedor-concepto{
 display: flex;
 justify-content: center;
@@ -139,92 +153,118 @@ align-items: center;
 gap: 2rem;
 } }
 
+/*-------------------------------Problematica-Tema-----------------------------------*/
 
-
-.contenedor-problematica{
+.contenedor-problematica__tema{
 background-image: url(tejidos.jpg);
 background-position: center;
 background-size: cover;
-width: 100%;
-height: 45rem;
+height: 28rem;
 }
 
-@media (min-width: 50rem){
+@media (min-width: 60rem){
+    .contenedor-problematica__tema{
+       height: 25rem;}
+}
+
+
+@media (min-width: 80rem){
+    .contenedor-problematica__tema{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       height: 35rem;}
+}
+
+.problematica-tema{
+    padding: 2rem;
+}
+
+
+
+@media (min-width: 80rem){
+    .problematica-tema{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+        gap: 4rem;
+        margin: auto;
+    }
+}
+
 .contenedor-problematica{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 35rem;} }
-
-
-
-.contenedor-titulo{
 background-color: rgb(0, 0, 0);
 color: white;
-width: 350px;
-height: 350px;
 padding:2rem ;
 border-radius: .8rem; 
-margin:  0 auto;
+margin: 1rem auto;
+margin-bottom: 20px;}
+
+
+@media (min-width:60rem){
+    .contenedor-problematica{
+        width: 50rem;
+    }
 }
 
-@media (min-width: 50rem){
-.contenedor-titulo{
-background-color: rgb(0, 0, 0);
-color: white;
-width: 350px;
-height: 350px;
-padding:2rem ;
-border-radius: .8rem;
-}}
+@media (min-width: 80rem){
+     .contenedor-problematica{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 40rem;
+        height: 25rem;
+        padding:2rem ;
+        border-radius: .8rem;}
+}
 
-
-
-
-
+    
 .contenedor-tema{
 background-color: rgb(0, 0, 0);
 color: white;
-width: 350px;
-height: 200px;
 padding: 2rem;
 border-radius: .8rem;
-margin:  0 auto;
-margin-top: 40px;}
-
-@media (min-width: 50rem){.contenedor-tema{
-width: 350px;
-height: 350px;
-margin-top: 0px;}}
-
-
-   
+margin: 1rem auto;
+margin-bottom: 20px;}
 
 
 
+@media (min-width: 60rem){.contenedor-tema{
+    width: 50rem;
+    height: 8rem;}
+}
 
+
+@media (min-width: 80rem){.contenedor-tema{
+    
+    width: 40rem;
+    height: 25rem;}
+}
+
+/*---------------------------------Segmentacion------------------------------------*/
 
 .contenedor-segmetacion
 {background-color: black;}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .contenedor-segmetacion{
 display: flex;
 align-items: center;
-gap: 5rem;
- } }
+gap: 5rem;} 
+}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .contendor-imagen__segmentacion{
 width: 60%;
-display: flex;} }
+display: flex;} 
+}
 
     
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .segmentacion-imagen{
 width: 100%;
-vertical-align: top;} }
+vertical-align: top;} 
+}
 
 
 .texto-segmentacion{
@@ -233,26 +273,26 @@ vertical-align: top;} }
     padding: 2rem;
 }
     
-
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .texto-segmentacion{
 justify-content: center;
-align-items: center;} }
-
-
-
+align-items: center;} 
+}
 
 .texto-segmentacion__caracteristicas{
 list-style-type:circle;
-color: white;}
+color: white;
+}
 
+
+/*------------------------------IconosdeRecoleccion-----------------------------------*/
 
 
 #herramientas-recoleccion{
 background-color: rgb(255, 255, 255);
 }
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 #herramientas-recoleccion{
 padding: 2rem;
 } }
@@ -261,7 +301,7 @@ padding: 2rem;
 #herramientas-recoleccion .seccion-titulo{
 color: black;}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .seccion-titulo{
 text-align: center;
  margin: 1rem;} }
@@ -270,7 +310,7 @@ text-align: center;
 text-align: center;}
 
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
    .herramientas-recoleccion__lista{
     list-style: none;
     display: flex;
@@ -285,7 +325,7 @@ list-style: none;
 }
 
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .herramienta-recoleccion{
  width: 35%;} }
 
@@ -302,52 +342,55 @@ margin: auto;}
 #entrevista{
 background-image: url(entrevista.png);
 margin: auto;}
+
+/*---------------------------------MapeoColectivo-------------------------------------------------*/
     
+.mapeo-colectivo__contenedor{
+background-color: rgb(0, 0, 0);}
+
+
 .mapeo-colectivo{
 background-color: rgb(0, 0, 0);
-width: 100%;
-height: 20rem;
 padding: 2rem;}
-
-.mapeo-colectivo{
- height: 25rem;}
-
-
-@media (min-width: 50rem){
-.mapeo-colectivo{
-background-color: rgb(0, 0, 0);
-width: 100%;
-height: 20rem;
-padding: 2rem;}}
 
     
 .mapeo-colectivo__pasos{
 background-color: rgb(236, 29, 157);
-height: 14rem;
 border-radius: .8rem;
 padding: 2rem;}
 
 
-@media (min-width: 50rem){
-.mapeo-colectivo__pasos{
-width: 50%;
-height: 10rem;
-border-radius: .8rem;
-padding: 2rem;
-margin: auto;}}
+@media (min-width: 60rem){
+    .mapeo-colectivo__pasos{
+        width: 35rem ;
+        border-radius: .8rem;
+        padding: 2rem;
+        margin: auto;}
+}
+
+
+@media (min-width: 80rem){
+    .mapeo-colectivo__pasos{
+        width: 35rem ;
+        border-radius: .8rem;
+        padding: 2rem;
+        margin: auto;}
+}
 
     
 .mapeo-colectivo__definicion{
 color: white;
 text-align: center;
 margin: 1rem;}
-    
- 
+  
+
+/*---------------------------------Tarjetas------------------------------------*/
+
 .tarjetas-mapa__colaborativo{
 width: 100%;
 height: 35rem;}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .tarjetas-mapa__colaborativo{
 background-color: white;
 width: 100%;
@@ -372,7 +415,7 @@ text-align: center;
 margin: 1rem auto;
 margin-bottom: 20px;}
 
-@media (min-width: 50rem){
+@media (min-width: 80rem){
 .tarjeta{
 width: 13rem;
 height: 18rem;
@@ -401,19 +444,8 @@ align-items: center;
 flex-flow: column;}
 
 
-
 #incendios{
 background-color: blue;}
-
-
-@media (min-width: 50rem){
-#incendios{
-background-color: rgb(173, 117, 13);}}
-
-@media (min-width: 60rem){
-#incendios{
-background-color: rgb(65, 65, 170);}}
-
 
 
 #contrafuegos{
@@ -423,6 +455,7 @@ background-color: rgb(248, 199, 125);
 #fuego{
 background-color: rgb(252, 138, 72);
 }
+
 
 .tarjeta:hover .ladoA{
 transform: rotateY(180deg);}
@@ -453,30 +486,151 @@ animation-delay: .1s;}
 .tarjeta3{
     animation-delay: .3s;}
 
-    
 
+
+
+/*--------------------------------MapeoColaborativo-----------------------------------*/
 .explicacion-final__proyecto{
-background-color: white;
-width: 100%;
-height: 8rem;
-padding: 2rem;
-display: flex;
- justify-content: center;
- align-items: center;
+    background-color: white;
 }
 
-@media (min-width: 50rem){
-.explicacion-final__proyecto{
-background-color: white;
-width: 100%;
-height: 5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-} }
-  
-    
-
 .explicacion-final__texto{
-    width: 43rem;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+@media (min-width: 60rem){
+    .explicacion-final__texto{
+        width: 40rem ;
+        border-radius: .8rem;
+        padding: 2rem;
+        margin: auto;}
+}
+
+
+@media (min-width: 80rem){
+    .explicacion-final__texto{
+        width: 43rem ;
+        border-radius: .8rem;
+        padding: 2rem;
+        margin: auto;}
+}
+
+
+
+/*------------------------------------Carteles----------------------------------------------*/
+
+.diseño-final__personajes{
+width: 100%;
+height: 125rem;
+
+}
+
+@media (min-width: 60rem){
+    .diseño-final__personajes{
+        height: 35rem;
+         
+        }
+}
+
+@media (min-width: 80rem){
+    .diseño-final__personajes{
+        height: 40rem;
+          
+        }
+}
+
+
+
+.diseño-final{
+width: 100%;
+padding: 5rem;
+gap: 2rem;  
+}
+
+@media (min-width: 60rem){
+    .diseño-final{
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;  
+        }
+}
+
+@media (min-width: 80rem){
+    .diseño-final{
+        width: 100%;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;   
+        }
+}
+
+
+
+
+
+[class*="cartel"]{
+
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    margin: 1rem auto;
+    margin-bottom: 20px;
+}
+
+.cartel1:hover{
+    transform: scale(1.1);
+}
+
+.cartel1{
+    background-image: url(cartel1.jpg);
+    
+}
+.cartel2{
+    background-image: url(cartel2.jpg);
+    
+}
+.cartel3{
+    background-image: url(cartel3.jpg);
+    
+}
+.cartel4{
+    background-image: url(cartel4.jpg);
+    
+}
+
+@media (min-width: 80rem){
+    .cartel1:hover{
+        transform: scale(1.1);} 
+    .cartel2:hover{
+    transform: scale(1.1);} 
+    .cartel3:hover{
+        transform: scale(1.1);} 
+    .cartel4:hover{
+        transform: scale(1.1);} 
+}
+
+
+/*------------------------------------footer------------------------------------------------------*/
+
+.integrantes{
+    background-color: black;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    color: white;
+}
+.integrantes_nombres{
+   
+    padding: 2rem;
+    font-size: .6rem;
+    font-style: italic;
 }
